@@ -3,7 +3,7 @@ let cachedQuotes = null;
 
 async function loadQuotes() {
   if (!cachedQuotes) {
-    const response = await fetch("quotes.json");
+    const response = await fetch("data/quotes.json");
     cachedQuotes = await response.json();
   }
   return cachedQuotes;
