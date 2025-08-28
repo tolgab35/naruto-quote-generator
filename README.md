@@ -1,51 +1,53 @@
 # Random Quote Generator
 
-Naruto anime serisinden motivasyonel sözleri gösteren basit web uygulaması.
+_English | [Türkçe](README.tr.md)_
 
-## Özellikler
+A simple web application that displays random motivational quotes from the Naruto anime series.
 
-- Rastgele söz gösterimi
-- Temiz ve minimal tasarım
-- Vanilla JavaScript kullanımı
-- JSON dosyasından veri yükleme
-- Ardışık aynı sözün gösterilmesini engelleme
+## Features
 
-## Teknolojiler
+- Random quote display
+- Clean and minimal design
+- Vanilla JavaScript implementation
+- JSON data loading
+- Prevents consecutive duplicate quotes
+
+## Technologies
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
 
-## Kullanım
+## Usage
 
-1. `index.html` dosyasını tarayıcıda açın
-2. "New Quote" butonuna tıklayarak yeni sözler görebilirsiniz
+1. Open `index.html` in your browser
+2. Click the "New Quote" button to see new quotes
 
-## Dosya Yapısı
+## File Structure
 
-- `index.html` - Ana HTML dosyası
-- `script.js` - JavaScript kodları
-- `style.css` - CSS stilleri
-- `quotes.json` - Anime sözleri veri dosyası
+- `index.html` - Main HTML file
+- `script.js` - JavaScript code
+- `style.css` - CSS styles
+- `quotes.json` - Anime quotes data file
 
-## Katkıda Bulunma
+## Contributing
 
-Projeye katkıda bulunmak istiyorsanız:
+If you want to contribute to the project:
 
-1. Bu repository'yi fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/yeni-ozellik`)
-5. Pull Request oluşturun
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Create a Pull Request
 
-### Katkı Fikirleri
+### Contribution Ideas
 
-- Yeni sözler eklemek
-- Görsel tasarımı geliştirmek
-- Yeni özellikler eklemek (tema değiştirme, favoriler, vb.)
-- Kod optimizasyonu yapmak
-- Çoklu dil desteği eklemek
+- Add new quotes from other anime series
+- Improve visual design
+- Add new features (theme switching, favorites, etc.)
+- Code optimization
+- Multi-language support
 
-## Lisans
+## License
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakınız.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
