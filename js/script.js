@@ -11,6 +11,15 @@ async function loadQuotes() {
 
 async function showQuotes() {
   const quotes = await loadQuotes();
+  const quoteElement = document.getElementById("quote");
+  const authorElement = document.getElementById("author");
+
+  // Fade out
+  quoteElement.classList.add("fade-out");
+  authorElement.classList.add("fade-out");
+
+  // Wait for fade out animation to complete
+  await new Promise((resolve) => setTimeout(resolve, 300));
 
   let randomIndex;
   do {
@@ -20,8 +29,12 @@ async function showQuotes() {
   lastIndex = randomIndex;
 
   const random = quotes[randomIndex];
-  document.getElementById("quote").textContent = random.quote;
-  document.getElementById("author").textContent = random.author;
+  quoteElement.textContent = random.quote;
+  authorElement.textContent = random.author;
+
+  // Fade in
+  quoteElement.classList.remove("fade-out");
+  authorElement.classList.remove("fade-out");
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
