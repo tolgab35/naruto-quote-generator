@@ -2,4 +2,88 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #121212;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#quote-container {
+  width: min(900px, 92vw);
+  min-height: 500px;
+  padding: 40px;
+  background: #1e1e1e;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* İçteki metin bloğunu ortala ve esnet */
+#quote-container > div {
+  flex: 1; /* boş alanı kapla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* dikey ortala */
+  align-items: center; /* yatay ortala */
+  gap: 12px; /* quote—author arası nefes */
+}
+
+#quote {
+  color: #ffffff;
+  font-size: clamp(20px, 4vw, 34px);
+  line-height: 1.45;
+  text-align: center;
+}
+
+#author {
+  color: #cccccc;
+  font-size: clamp(16px, 2.5vw, 24px);
+  text-align: center;
+  font-style: italic;
+}
+
+#new-quote {
+  font-size: 1rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #6c63ff, #836fff);
+  color: white;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+#new-quote:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #7b74ff, #9c89ff);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+#new-quote:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
