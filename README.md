@@ -1,4 +1,4 @@
-# Random Quote Generator
+# Naruto Quote Generator
 
 _English | [Türkçe](README.tr.md)_
 
