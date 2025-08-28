@@ -1,10 +1,12 @@
 let lastIndex = -1;
+let cachedQuotes = null;
 
 async function loadQuotes() {
-  const url = "quotes.json";
-  const response = await fetch(url);
-  const data = await response.json();
-  return data;
+  if (!cachedQuotes) {
+    const response = await fetch("quotes.json");
+    cachedQuotes = await response.json();
+  }
+  return cachedQuotes;
 }
 
 async function showQuotes() {
