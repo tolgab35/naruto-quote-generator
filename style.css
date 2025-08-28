@@ -1,3 +1,6 @@
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +21,43 @@ body {
   align-items: center;
 }
 
+/* ========================================
+   HEADER & FOOTER
+   ======================================== */
+header {
+  width: 100%;
+  padding: 18px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: clamp(18px, 3.5vw, 28px);
+  color: #e0e0e0;
+  font-weight: 600;
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #6c63ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* ========================================
+   QUOTE CONTAINER
+   ======================================== */
 #quote-container {
   width: min(900px, 92vw);
   min-height: 500px;
@@ -33,16 +73,19 @@ body {
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-/* İçteki metin bloğunu ortala ve esnet */
+/* Quote content wrapper */
 #quote-container > div {
-  flex: 1; /* boş alanı kapla */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* dikey ortala */
-  align-items: center; /* yatay ortala */
-  gap: 12px; /* quote—author arası nefes */
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
+/* ========================================
+   QUOTE TEXT STYLING
+   ======================================== */
 #quote {
   color: #ffffff;
   font-size: clamp(20px, 4vw, 34px);
@@ -57,6 +100,9 @@ body {
   font-style: italic;
 }
 
+/* ========================================
+   BUTTON STYLING
+   ======================================== */
 #new-quote {
   font-size: 1rem;
   font-weight: 500;
@@ -69,21 +115,77 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
+
 #new-quote:hover {
   transform: translateY(-2px);
   background: linear-gradient(135deg, #7b74ff, #9c89ff);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
+
 #new-quote:active {
   transform: translateY(0);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer a {
-  color: #6c63ff;
-  text-decoration: none;
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet view */
+@media (max-width: 900px) {
+  #quote-container {
+    width: min(720px, 94vw);
+    padding: 32px;
+  }
 }
-footer a:hover {
-  color: #ffffff;
-  text-decoration: none;
+
+/* Mobile view */
+@media (max-width: 600px) {
+  body {
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #quote-container {
+    width: calc(100% - 32px);
+    padding: 20px;
+    min-height: 360px;
+    border-radius: 12px;
+  }
+
+  #quote-container > div {
+    gap: 10px;
+  }
+
+  #quote {
+    font-size: clamp(18px, 6vw, 30px);
+  }
+
+  #author {
+    font-size: clamp(14px, 4vw, 20px);
+  }
+
+  #new-quote {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+}
+
+/* Small mobile view */
+@media (max-width: 420px) {
+  header h1 {
+    font-size: 16px;
+  }
+
+  #quote-container {
+    padding: 16px;
+    min-height: 300px;
+  }
+
+  #quote {
+    line-height: 1.35;
+  }
 }
