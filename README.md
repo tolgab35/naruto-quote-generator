@@ -4,6 +4,10 @@ _English | [Türkçe](README.tr.md)_
 
 A simple web application that displays random motivational quotes from the Naruto anime series.
 
+## Preview
+
+![App Screenshot](assets/screenshot.png)
+
 ## Features
 
 - Random quote display

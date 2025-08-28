@@ -4,6 +4,10 @@ _[English](README.md) | Türkçe_
 
 Naruto anime serisinden motivasyonel sözleri gösteren basit web uygulaması.
 
+## Önizleme
+
+![Uygulama Görseli](assets/screenshot.png)
+
 ## Özellikler
 
 - Rastgele söz gösterimi
