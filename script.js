@@ -5,11 +5,17 @@ async function loadQuotes() {
   return data;
 }
 
-document.getElementById("new-quote").addEventListener("click", async () => {
+async function showQuotes() {
   const quotes = await loadQuotes();
-
   const random = quotes[Math.floor(Math.random() * quotes.length)];
-
   document.getElementById("quote").textContent = random.quote;
   document.getElementById("author").textContent = random.author;
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  showQuotes();
+
+  document.getElementById("new-quote").addEventListener("click", async () => {
+    showQuotes();
+  });
 });
