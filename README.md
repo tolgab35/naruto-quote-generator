@@ -8,6 +8,11 @@ A simple web application that displays random motivational quotes from the Narut
 
 ![App Screenshot](assets/screenshot.png)
 
+## Live Demo
+
+You can try the project directly here:  
+👉 [Naruto Quote Generator - Live Preview](https://tolgab35.github.io/naruto-quote-generator/)
+
 ## Features
 
 - Random quote display

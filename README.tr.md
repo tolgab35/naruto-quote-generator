@@ -8,6 +8,11 @@ Naruto anime serisinden motivasyonel sözleri gösteren basit web uygulaması.
 
 ![Uygulama Görseli](assets/screenshot.png)
 
+## Canlı Önizleme
+
+Projeyi doğrudan buradan deneyebilirsiniz:  
+👉 [Naruto Quote Generator - Canlı Önizleme](https://tolgab35.github.io/naruto-quote-generator/)
+
 ## Özellikler
 
 - Rastgele söz gösterimi
